@@ -4,6 +4,9 @@ Weather Application that launches a website where user can enter the name of a c
 
 #Src
 - Used Node.js to set up the server and website structure
+- Called the APIs and retrieved data in geocode.js and forecast.js
+- Used inputted text to retrieve latitude and longitude coordinates for the given city
+- Used latitude and longitude coordinates to fetch current weather information from API
 
 # Public
 - Clientside JavaScript - responsible for displaying retrieved weather data on the webpage or any error messages
