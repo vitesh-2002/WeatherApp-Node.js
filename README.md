@@ -2,6 +2,9 @@
 
 Weather Application that launches a website where user can enter the name of a city, ZIP code, region, etc. and immediately recieve up-to-date weather information about that city
 
+#Src
+- Used Node.js to set up the server and website structure
+
 # Public
 - Clientside JavaScript - responsible for displaying retrieved weather data on the webpage or any error messages
 - CSS stylesheet - stylistic elements of the webpage
