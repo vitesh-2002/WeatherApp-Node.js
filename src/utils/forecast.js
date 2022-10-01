@@ -17,6 +17,10 @@ const forecast = (lat, long, callback) => {
                 temperature: `${body.current.temperature}\u00B0F`,
                 feelsLike: `${body.current.feelslike}\u00B0F`,
                 description: body.current.weather_descriptions[0],
+                windSpeed: `${body.current.wind_speed}mph`,
+                humidity: `${body.current.humidity}%`,
+                uvIndex: `${body.current.uv_index}`,
+                precip: `${body.current.precip}" expected in the next 24 hours`
                 
             })
         }

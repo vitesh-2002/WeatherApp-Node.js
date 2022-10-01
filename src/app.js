@@ -41,15 +41,19 @@ app.get('/weather', (req, res) => {
         }
         
         console.log(`Location: ${location}\nLatitude: ${latitude}\nLongitude: ${longitude}`);
-        forecast(latitude, longitude, (error, { temperature, feelsLike, description }) => {
+        forecast(latitude, longitude, (error, { temperature, feelsLike, description, windSpeed, humidity, uvIndex, precip }) => {
             if (error) {
                 return res.send(error);
             }
-            console.log(`Temperature: ${temperature}\nFeels Like: ${feelsLike}\nDescription: ${description}`);
+            console.log(`Temperature: ${temperature}\nFeels Like: ${feelsLike}\nDescription: ${description}\nWind Speed: ${windSpeed}\nHumidity: ${humidity}\nUV Index: ${uvIndex}\nPrecipitation in the last 24 hours: ${precip}`);
             res.send({
                 temperature: temperature,
                 feelsLike: feelsLike,
                 description: description,
+                windSpeed: windSpeed,
+                humidity: humidity,
+                uvIndex: uvIndex,
+                precip: precip,
                 location,
                 address: req.query.address,
             })
