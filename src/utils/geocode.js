@@ -17,15 +17,6 @@ const geocode = (address, callback) => {
         }
     })
 };
-// geocode('Cary', (error, data) => {
-//     console.log('Error', error);
-//     console.log('Data', data);
-
-// })
-// geocode('Philadelphia', (error, data) => {
-//     console.log('Error', error);
-//     console.log('Data', data);
-// })
 
 module.exports = geocode;
 
@@ -35,6 +26,15 @@ module.exports = geocode;
 
 
 
+// geocode('Cary', (error, data) => {
+//     console.log('Error', error);
+//     console.log('Data', data);
+
+// })
+// geocode('Philadelphia', (error, data) => {
+//     console.log('Error', error);
+//     console.log('Data', data);
+// })
 
 
 // const urlMapBox = 'https://api.mapbox.com/geocoding/v5/mapbox.places/cary.json?access_token=pk.eyJ1Ijoidml0ZXNoMjAwMiIsImEiOiJjbDdzenpzZjUwcGV6M3dtcWJuNTc2czdkIn0.YtFAeXePUIZ6tVJRshst2A&limit=1';
