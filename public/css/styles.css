@@ -45,8 +45,9 @@ header a {
 }
 
 input {
-    border: 1px solid #cccccc;
+    border: 3px solid #cccccc;
     padding: 10px;
+    width: 250px;
 }
 
 button {
